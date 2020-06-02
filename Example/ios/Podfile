@@ -55,6 +55,12 @@ target 'ScreensExample' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
   use_native_modules!
 
+  target 'ScreensExample-macOS' do
+    platform :macos, '10.14'
+    use_native_modules!
+    # Pods specifically for macOS target
+  end
+
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
